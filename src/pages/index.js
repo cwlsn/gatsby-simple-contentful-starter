@@ -9,7 +9,9 @@ const HomePage = () => (
           title
           date
           content {
-            content
+            childMarkdownRemark {
+              html
+            }
           }
           image {
             file {
@@ -23,7 +25,9 @@ const HomePage = () => (
       contentfulHomePage: {
         title,
         date,
-        content: { content },
+        content: {
+          childMarkdownRemark: { html }
+        },
         image: {
           file: { url }
         }
@@ -33,9 +37,10 @@ const HomePage = () => (
         <h1>{title}</h1>
         <small>Created on {date}</small>
         <img src={url} />
-        <p>{content}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </>
     )}
   />
 );
+
 export default HomePage;
