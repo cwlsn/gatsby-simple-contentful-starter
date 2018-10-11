@@ -1,5 +1,7 @@
-import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import moment from 'moment';
+import Layout from '../components/Layout';
 
 const HomePage = () => (
   <StaticQuery
@@ -26,19 +28,15 @@ const HomePage = () => (
         title,
         date,
         content: {
-          childMarkdownRemark: { html }
+          childMarkdownRemark: { html },
         },
-        image: {
-          file: { url }
-        }
-      }
+      },
     }) => (
-      <>
+      <Layout>
         <h1>{title}</h1>
-        <small>Created on {date}</small>
-        <img src={url} />
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </>
+        <small>Created on {moment(date).format('L')}</small>
+        <article dangerouslySetInnerHTML={{ __html: html }} />
+      </Layout>
     )}
   />
 );
