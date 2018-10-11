@@ -12,6 +12,8 @@ $ gatsby new my-fun-site https://github.com/cwlsn/gatsby-simple-contentful-start
 
 Rename `sample.env` to `.env` and fill in your Contentful details.
 
+This starter will try to talk to a Contentful Model named `homePage`.
+
 From your project's root, make sure dependencies are installed and start the Gatsby development server.
 
 ```bash
