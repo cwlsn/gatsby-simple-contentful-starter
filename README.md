@@ -1,12 +1,32 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+# gatsby-simple-contentful-starter
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This Gatsby starter is able to connect to your Contentful account. [View the live demo](https://gatsby-simple-contentful-starter.netlify.com/)!
+
+## Quick Start
+
+First, create a new Gatsby site from the starter:
+
+```bash
+$ gatsby new my-fun-site https://github.com/cwlsn/gatsby-simple-contentful-starter
 ```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+
+Rename `sample.env` to `.env` and fill in your Contentful details.
+
+From your project's root, make sure dependencies are installed and start the Gatsby development server.
+
+```bash
+$ npm i
+$ gatsby develop
 ```
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
+## Production on Netlify
 
-## Running in development
-`gatsby develop`
+Push your site to Git and create a new site from that repo on Netlify. Make sure to add your Contentful creds in the environment variables.
+
+## Detailed Instructions
+
+Check out the article detailing how to create and deploy a [Gatsby site with Contentful on Netlify](https://medium.com/@cwlsn/jamstack-basics-how-to-create-a-gatsby-starter-with-contentful-and-deploy-to-netlify-846354cc74bc).
+
+## Author
+
+[Connor Wilson](https://cwlsn.com)
