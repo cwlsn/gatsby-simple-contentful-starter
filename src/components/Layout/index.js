@@ -97,6 +97,8 @@ const Footer = styled.footer`
 
 function Layout({ children }) {
   injectGlobal`
+		@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
 		${reset}
 
 		body {
