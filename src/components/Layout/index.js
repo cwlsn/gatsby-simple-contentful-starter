@@ -74,6 +74,11 @@ const Section = styled.section`
     font-size: 16px;
     margin-bottom: 15px;
   }
+
+  & > article > img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const Footer = styled.footer`
