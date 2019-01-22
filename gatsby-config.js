@@ -21,5 +21,11 @@ module.exports = {
         accessToken,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ['Quicksand:400,700'],
+      },
+    },
   ],
 };
